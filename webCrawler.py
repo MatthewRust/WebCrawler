@@ -46,7 +46,6 @@ class webCrawler():
                 print(f"Skipping {url}: {e}")
                 continue
             
-            print(links)
             for link in links:
                 parsed = urlparse(link)
                 if parsed.scheme in ("http", "https"):
